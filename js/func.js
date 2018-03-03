@@ -22,6 +22,16 @@ jQuery(document).ready(function() {
 	}
 
 	job_manager_fields_read_and_copy_paste(); 
-	
 		
 });
+
+
+/*  Ninja Forms Integration 
+    This must be insert, to load jQuery function
+*/ 
+
+	jQuery(document).on( 'nfFormReady', function( e, layoutView ) {
+		var ausleser = jQuery('.name strong').html();
+		jQuery('input.mks-vorname').val(ausleser);
+	}); 
+	 
